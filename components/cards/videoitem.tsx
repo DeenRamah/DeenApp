@@ -1,16 +1,14 @@
-"use client";
-// components/cards/VideoItem.tsx
 
+// components/cards/VideoItem.tsx
+"use client"
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 
 interface VideoItemProps {
   file: string;
-  profileImage: string;
-  username: string;
 }
 
-const VideoItem: React.FC<VideoItemProps> = ({ file, profileImage, username }) => {
+const VideoItem: React.FC<VideoItemProps> = ({ file }) => {
   const [liked, setLiked] = useState(false);
   const [showCommentInput, setShowCommentInput] = useState(false);
   const [commentText, setCommentText] = useState('');
