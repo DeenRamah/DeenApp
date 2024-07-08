@@ -20,6 +20,11 @@ export const sidebarLinks = [
     label: "Create Buzz",
   },
   {
+    imgURL: "/assets/video.svg",
+    route: "/snaps",
+    label: "Snaps",
+  },
+  {
     imgURL: "/assets/community.svg",
     route: "/communities",
     label: "Cohorts",
@@ -29,6 +34,7 @@ export const sidebarLinks = [
     route: "/profile",
     label: "Profile",
   },
+
 ];
 
 export const profileTabs = [
