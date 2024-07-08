@@ -64,7 +64,7 @@ const VideoItem: React.FC<VideoItemProps> = ({ file }) => {
 
   return (
     <div className="flex justify-center items-center my-8 w-full">
-      <div className="video-container">
+      <div className="relative w-full sm:h-screen md:h-3/4 h-auto">
         <video ref={videoRef} className="w-full h-full object-cover" controls>
           <source src={file} type="video/mp4" />
           Your browser does not support the video tag.
