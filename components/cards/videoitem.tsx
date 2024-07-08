@@ -1,4 +1,3 @@
-
 // components/cards/VideoItem.tsx
 "use client"
 import React, { useState, useEffect, useRef } from 'react';
@@ -18,10 +17,11 @@ const VideoItem: React.FC<VideoItemProps> = ({ file }) => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach(entry => {
+          const target = entry.target as HTMLVideoElement;
           if (entry.isIntersecting) {
-            entry.target.play();
+            target.play();
           } else {
-            entry.target.pause();
+            target.pause();
           }
         });
       },

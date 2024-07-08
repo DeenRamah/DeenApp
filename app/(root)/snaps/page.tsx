@@ -48,8 +48,8 @@ const Page: React.FC = () => {
 
   return (
     <div className="main-container">
-      {localVideoFiles.map((file, index) => (
-        <VideoItem key={index} file={file} />
+      {localVideoFiles.map((file) => (
+        <VideoItem key={file} file={file} />
       ))}
     </div>
   );
