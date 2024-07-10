@@ -17,7 +17,7 @@
 .activity-card {
 @apply flex items-center gap-2 rounded-md bg-dark-2 px-7 py-4;
 }
-
+ 
 /* No Result */
 .no-result {
 @apply text-center !text-base-regular text-light-3;
@@ -187,4 +187,11 @@ background: #7878a3;
 .comment-form_btn {
   @apply bg-primary-500 text-white px-4 py-2 rounded-md;
 }
-
+.flex-center {
+  @apply flex items-center justify-center;
+}
+.glassmorphism-auth {
+  background: rgba(6, 3, 3, 0.711);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
