@@ -1,5 +1,11 @@
-import { SignIn } from "@clerk/nextjs";
+import { SignIn } from '@clerk/nextjs'
 
-export default function Page() {
-  return <SignIn />;
+const Page = () => {
+  return (
+    <div className="flex-center glassmorphism-auth h-screen w-full">
+      <SignIn />
+    </div>
+  )
 }
+
+export default Page
